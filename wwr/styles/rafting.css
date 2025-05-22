@@ -40,16 +40,6 @@ article {
     padding: 8px;
 }
 
-.socialmedia a {
-    text-decoration: none;
-}
-
-.socialmedia img {
-    width: 24px;
-    height: auto;
-    margin: 0 8px;
-}
-
 .hero {
     position: relative;
 }
@@ -85,4 +75,16 @@ h1 {
 .hero article img {
     float: right;
     width: 125px;
+}
+
+.socialmedia img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    margin: 0 8px;
+}
+
+.socialmedia a {
+    text-decoration: none;
+    display: inline-block;
 }
