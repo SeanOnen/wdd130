@@ -1,183 +1,91 @@
-:root {
-    --primary-color: #5c6bc0;
-    /* Indigo */
-    --secondary-color: #e8eaf6;
-    /* Light indigo background */
-    --accent-color: #3949ab;
-    /* Darker accent */
-    --text-color: #333;
-    /* Accessible dark text */
-    --white: #ffffff;
-}
-
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    font-family: 'Segoe UI', sans-serif;
-    line-height: 1.6;
-    color: var(--text-color);
-    background-color: var(--white);
-}
-
-/* Header using CSS Grid */
+/* Header */
 header {
-    background-color: var(--primary-color);
-    padding: 1rem 2rem;
-    display: grid;
-    grid-template-columns: auto 1fr;
-    align-items: center;
-    gap: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
 }
 
-header img {
-    width: 80px;
-    height: auto;
+.logo {
+  width: 60px;
+  height: auto;
 }
 
-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: flex-end;
-    gap: 1.5rem;
+nav a {
+  margin: 0 0.5rem;
+  text-decoration: none;
 }
 
-nav ul li a {
-    color: var(--white);
-    text-decoration: none;
-    font-weight: 600;
-    padding: 0.5rem 1rem;
-    border-radius: 4px;
-    transition: background-color 0.3s;
-}
-
-nav ul li a:hover {
-    background-color: var(--accent-color);
-}
-
-/* Hero section - White Water Rafting */
+/* Hero Section */
 .hero {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    padding: 2rem;
-    background-color: var(--secondary-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.hero-img {
+  width: 100%;
+  height: auto;
 }
 
 .hero-text {
-    flex: 1;
-    padding: 1rem;
+  max-width: 800px;
+  padding: 1rem;
 }
 
-.hero-text h1 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-}
-
-.hero-text p {
-    font-size: 1rem;
-    line-height: 1.5;
-}
-
-.hero img {
-    flex: 1;
-    max-width: 300px;
-    height: auto;
-    border-radius: 8px;
+.client-img {
+  width: 200px;
+  float: left;
+  margin-right: 1rem;
 }
 
 /* History Section */
-.history {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    padding: 2rem;
-    background-color: var(--white);
-    gap: 2rem;
+#history {
+  padding: 2rem;
 }
 
-.history .text {
-    flex: 1 1 300px;
-    padding: 1rem;
+.history-content {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  align-items: center;
 }
 
-.history img {
-    width: 200px;
-    height: auto;
-    border-radius: 8px;
+.history-content img {
+  width: 300px;
+  height: auto;
 }
 
-/* Adventure Awaits You Section */
-.adventures {
-    padding: 2rem;
-    background-color: var(--secondary-color);
-    text-align: center;
+/* Adventures Gallery */
+.adventure-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
 }
 
-.adventures h2 {
-    font-size: 1.75rem;
-    margin-bottom: 1.5rem;
-}
-
-.adventures-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 1rem;
-}
-
-.adventures figure {
-    flex: 1 1 150px;
-    max-width: 180px;
-    background-color: var(--white);
-    padding: 0.5rem;
-    border-radius: 6px;
-    text-align: center;
-}
-
-.adventures figure img {
-    width: 100%;
-    height: auto;
-    border-radius: 4px;
-}
-
-.adventures figcaption {
-    font-size: 0.9rem;
-    margin-top: 0.5rem;
+.adventure-gallery figure {
+  width: 180px;
+  text-align: center;
 }
 
 /* Footer */
 footer {
-    background-color: var(--primary-color);
-    color: var(--white);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 2rem;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #f0f0f0;
 }
 
-footer p {
-    flex: 1;
-    font-size: 0.9rem;
+.socialmedia {
+  display: flex;
+  gap: 1rem;
 }
 
-footer .social-icons {
-    display: flex;
-    gap: 1rem;
-}
-
-footer .social-icons a img {
-    width: 24px;
-    height: 24px;
-    filter: brightness(0) invert(1);
-    transition: transform 0.2s;
-}
-
-footer .social-icons a:hover img {
-    transform: scale(1.1);
+.socialmedia .icon {
+  width: 30px;
+  height: 30px;
 }
