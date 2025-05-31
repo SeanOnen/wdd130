@@ -1,3 +1,42 @@
+/* Color and font variables */
+:root {
+    --primary-color: #003f63;
+    --secondary-color: #cce7f0;
+    --accent1-color: #01579b;
+    --accent2-color: #4B0082;
+    --text-color: #1e1e1e;
+    --light-bg: #ffffff;
+
+    --heading-font: 'Montserrat', sans-serif;
+    --body-font: 'Open Sans', sans-serif;
+}
+
+/* Base styles */
+body {
+    font-family: var(--body-font);
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: #f9f9f9;
+}
+
+h1,
+h2 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: var(--accent1-color);
+}
+
+a:hover {
+    color: var(--primary-color);
+}
+
 /* Header */
 .site-header {
   display: grid;
@@ -43,9 +82,80 @@
   color: var(--accent2-color);
 }
 
+/* Hero Section */
+.hero {
+    background-color: var(--light-bg);
+    padding: 2rem;
+}
+
+.hero h2 {
+    margin-bottom: 1.5rem;
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.client-img {
+    width: 300px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.hero-content p {
+    max-width: 400px;
+    font-size: 1rem;
+}
+
+/* History Section */
+.section {
+    padding: 2rem;
+    background-color: var(--light-bg);
+}
+
+#history .history-content {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    gap: 1rem;
+    align-items: start;
+}
+
+.history-img {
+    max-height: 300px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Adventures */
+.adventures .adventure-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.adventure-gallery img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+figcaption {
+    text-align: center;
+    margin-top: 0.5rem;
+    font-weight: 500;
+}
+
 /* Footer */
 footer {
-  background-color: var(--light-bg); /* Changed from black to match overall site */
+  background-color: var(--light-bg);
   color: var(--text-color);
   padding: 1.5rem;
   margin-top: 2rem;
@@ -76,6 +186,12 @@ footer .socialmedia {
 .icon {
   height: 24px;
   width: 24px;
-  /* Remove the invert filter so images show their original colors */
   filter: none;
+}
+
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
 }
