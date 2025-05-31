@@ -2,8 +2,8 @@
 :root {
     --primary-color: #003f63;
     --secondary-color: #cce7f0;
-    --accent1-color: #0277bd;
-    --accent2-color: #ffca28;
+    --accent1-color: #01579b;
+    --accent2-color: #f9a825;
     --text-color: #1e1e1e;
     --light-bg: #ffffff;
 
@@ -37,15 +37,15 @@ a:hover {
     color: var(--primary-color);
 }
 
-/* Header */
+/* Header using CSS Grid */
 .site-header {
     background-color: var(--light-bg);
-    padding: 1rem 2rem;
-    display: flex;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
     align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    padding: 1rem 2rem;
     border-bottom: 2px solid #eaeaea;
+    gap: 1rem;
 }
 
 .logo {
@@ -55,13 +55,20 @@ a:hover {
 
 .site-header h1 {
     font-size: 1.8rem;
-    margin: 0 1rem;
+    margin: 0;
+    justify-self: center;
 }
 
 .main-nav {
     display: flex;
     gap: 1rem;
     font-weight: 600;
+    justify-self: end;
+    flex-wrap: wrap;
+}
+
+.main-nav a {
+    color: var(--accent1-color);
 }
 
 .main-nav a.active {
@@ -141,10 +148,11 @@ figcaption {
 
 /* Footer */
 footer {
-    background-color: #222;
-    color: #fff;
-    padding: 1rem;
+    background-color: var(--light-bg);
+    color: var(--text-color);
+    padding: 1rem 1.5rem;
     margin-top: 2rem;
+    border-top: 1px solid #ccc;
 }
 
 .footer-container {
@@ -159,6 +167,7 @@ footer p {
     margin: 0;
     flex-grow: 1;
     text-align: left;
+    font-size: 0.95rem;
 }
 
 footer .socialmedia {
@@ -171,9 +180,10 @@ footer .socialmedia {
 .icon {
     height: 24px;
     width: 24px;
-    filter: invert(1);
+    filter: invert(20%) sepia(100%) saturate(500%) hue-rotate(170deg);
 }
 
+/* Container */
 .container {
     max-width: 1200px;
     margin: 0 auto;
