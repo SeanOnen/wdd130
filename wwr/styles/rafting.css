@@ -1,6 +1,6 @@
 /* Color and font variables */
 :root {
-    --primary-color: #003f63;
+    --primary-color: #002b49;
     --secondary-color: #cce7f0;
     --accent1-color: #01579b;
     --accent2-color: #4B0082;
@@ -142,6 +142,10 @@ footer {
 }
 
 /* Adventures */
+.adventures {
+    margin-top: 2rem;
+}
+
 .adventures .adventure-gallery {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
