@@ -39,47 +39,47 @@ a:hover {
 
 /* Header */
 .site-header {
-  display: grid;
-  grid-template-columns: auto 1fr auto;
-  align-items: center;
-  padding: 1rem 1.5rem;
-  background-color: var(--light-bg);
-  border-bottom: 2px solid #eaeaea;
-  gap: 1rem;
-  max-width: 1200px;
-  margin: 0 auto;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    background-color: var(--light-bg);
+    border-bottom: 2px solid #eaeaea;
+    gap: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .logo {
-  height: 60px;
-  border-radius: 8px;
+    height: 60px;
+    border-radius: 8px;
 }
 
 .site-header h1 {
-  font-size: 1.8rem;
-  margin: 0;
-  color: var(--primary-color);
-  text-align: center;
+    font-size: 1.8rem;
+    margin: 0;
+    color: var(--primary-color);
+    text-align: center;
 }
 
 .main-nav {
-  display: flex;
-  gap: 1rem;
-  font-weight: 600;
-  justify-content: flex-end;
-  flex-wrap: wrap;
+    display: flex;
+    gap: 1rem;
+    font-weight: 600;
+    justify-content: flex-end;
+    flex-wrap: wrap;
 }
 
 .main-nav a {
-  color: var(--accent1-color);
+    color: var(--accent1-color);
 }
 
 .main-nav a:hover {
-  color: var(--primary-color);
+    color: var(--primary-color);
 }
 
 .main-nav a.active {
-  color: var(--accent2-color);
+    color: var(--accent2-color);
 }
 
 /* Hero Section */
@@ -155,38 +155,38 @@ figcaption {
 
 /* Footer */
 footer {
-  background-color: var(--light-bg);
-  color: var(--text-color);
-  padding: 1.5rem;
-  margin-top: 2rem;
-  border-top: 2px solid #eaeaea;
+    background-color: var(--light-bg);
+    color: var(--text-color);
+    padding: 1.5rem;
+    margin-top: 2rem;
+    border-top: 2px solid #eaeaea;
 }
 
 .footer-container {
-  display: grid;
-  grid-template-columns: 1fr auto;
-  align-items: center;
-  gap: 1rem;
-  max-width: 1200px;
-  margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    gap: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 footer p {
-  margin: 0;
-  font-size: 0.95rem;
+    margin: 0;
+    font-size: 0.95rem;
 }
 
 footer .socialmedia {
-  display: flex;
-  gap: 1rem;
-  justify-content: flex-end;
-  flex-wrap: wrap;
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-end;
+    flex-wrap: wrap;
 }
 
 .icon {
-  height: 24px;
-  width: 24px;
-  filter: none;
+    height: 24px;
+    width: 24px;
+    filter: none;
 }
 
 /* Container */
