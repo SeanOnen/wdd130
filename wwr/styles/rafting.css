@@ -57,6 +57,8 @@ a:hover {
 
 .site-header h1 {
     font-size: 1.8rem;
+    grid-column: 2/3;
+    justify-self: center;
     margin: 0;
     color: var(--primary-color);
     text-align: center;
