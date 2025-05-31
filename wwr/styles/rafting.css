@@ -37,7 +37,6 @@ a:hover {
     color: var(--primary-color);
 }
 
-/* Add spacing between major sections */
 .hero,
 .history,
 .adventure,
@@ -49,14 +48,14 @@ footer {
 /* Header */
 .site-header {
     display: grid;
-    grid-template-columns: auto 1fr auto;
+    grid-template-columns: 360px 1fr 1fr;
     align-items: center;
     padding: 1rem 1.5rem;
     background-color: var(--light-bg);
-    border-bottom: 2px solid #eaeaea;
+    border-bottom: 2px solid #ccc;
     gap: 1rem;
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 1rem auto;
 }
 
 .logo {
