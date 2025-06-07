@@ -25,101 +25,99 @@
     </header>
 
     <main class="container">
-        <section class="hero">
-            <h2>Contact Us</h2>
-            <p class="contact-intro">We’d love to hear from you. Whether you're planning your next adventure or
-                just have a question, feel free to reach out!</p>
-        </section>
+        <div class="section-wrapper">
+            <section class="section hero">
+                <h2>Book Your Next Adventure!</h2>
+                <p class="contact-intro">We’d love to hear from you. Whether you're planning your next adventure or
+                    just have a question, feel free to reach out!</p>
+            </section>
+        </div>
 
-        <section class="section contact-info">
-            <h2>Our Information</h2>
-            <p><strong>Address:</strong> 123 River Rapids Lane, Jinja, Uganda</p>
-            <p><strong>Phone:</strong> +256 123 456 789</p>
-            <p><strong>Email:</strong> info@whitewaterrafting.com</p>
-            <div class="map-container">
-                <iframe class="map-frame"
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127642.20224270891!2d32.50942004240936!3d0.2883865781227007!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x177dbb52aef038cd%3A0x987579f3c4dd7ae6!2sUK%20Mall%2C%20Kansanga!5e0!3m2!1sen!2sug!4v1717756035281!5m2!1sen!2sug"
-                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-                </iframe>
-            </div>
-        </section>
+        <div class="section-wrapper">
+            <section class="section contact-info">
+                <h2>Our Information</h2>
+                <p><strong>Address:</strong> 123 River Rapids Lane, Jinja, Uganda</p>
+                <p><strong>Phone:</strong> +256 123 456 789</p>
+                <p><strong>Email:</strong> info@whitewaterrafting.com</p>
+                <div class="map-container">
+                    <iframe class="map-frame"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127642.20224270891!2d32.50942004240936!3d0.2883865781227007!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x177dbb52aef038cd%3A0x987579f3c4dd7ae6!2sUK%20Mall%2C%20Kansanga!5e0!3m2!1sen!2sug!4v1717756035281!5m2!1sen!2sug"
+                        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </section>
+        </div>
 
-       <section class="section">
-  <h2>Contact Us</h2>
-  <form class="contact-form" action="#" method="post">
+        <div class="section-wrapper">
+            <section class="section">
+                <h2>Contact Us</h2>
 
-    <fieldset>
-      <legend>Your Information</legend>
+                <form class="contact-form" action="#" method="post">
+                    <fieldset>
+                        <legend>Your Information</legend>
+                        <label for="name">Full Name:</label>
+                        <input type="text" id="name" name="name" required />
+                        <label for="email">Email Address:</label>
+                        <input type="email" id="email" name="email" required />
+                    </fieldset>
 
-      <label for="name">Full Name:</label>
-      <input type="text" id="name" name="name" required />
+                    <fieldset>
+                        <legend>Purpose of Message</legend>
+                        <label>
+                            <input type="radio" name="purpose" value="inquiry" required />
+                            General Inquiry
+                        </label><br />
+                        <label>
+                            <input type="radio" name="purpose" value="reservation" />
+                            Reservation Question
+                        </label><br />
+                        <label>
+                            <input type="radio" name="purpose" value="suggestion" />
+                            Website Suggestion
+                        </label>
+                    </fieldset>
 
-      <label for="email">Email Address:</label>
-      <input type="email" id="email" name="email" required />
-    </fieldset>
+                    <fieldset>
+                        <legend>Your Message</legend>
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </fieldset>
 
-    <fieldset>
-      <legend>Purpose of Message</legend>
+                    <fieldset>
+                        <legend>Newsletter Subscription</legend>
+                        <label for="newsletter">
+                            <input type="checkbox" id="newsletter" name="newsletter" />
+                            Please subscribe me to the monthly newsletter
+                        </label>
+                    </fieldset>
 
-      <label>
-        <input type="radio" name="purpose" value="inquiry" required />
-        General Inquiry
-      </label><br />
+                    <fieldset>
+                        <legend>Submit</legend>
+                        <button type="submit" id="submitBtn">Send Your Message</button>
+                    </fieldset>
+                </form>
+            </section>
+        </div>
 
-      <label>
-        <input type="radio" name="purpose" value="reservation" />
-        Reservation Question
-      </label><br />
-
-      <label>
-        <input type="radio" name="purpose" value="suggestion" />
-        Website Suggestion
-      </label>
-    </fieldset>
-
-    <fieldset>
-      <legend>Your Message</legend>
-
-      <label for="message">Message:</label>
-      <textarea id="message" name="message" rows="5" required></textarea>
-    </fieldset>
-
-    <fieldset>
-      <legend>Newsletter Subscription</legend>
-
-      <label for="newsletter">
-        <input type="checkbox" id="newsletter" name="newsletter" />
-        Please subscribe me to the monthly newsletter
-      </label>
-    </fieldset>
-
-    <fieldset>
-      <legend>Submit</legend>
-
-      <button type="submit" id="submitBtn">Send Your Message</button>
-    </fieldset>
-
-  </form>
-</section>
-
-
-        <section class="section">
-            <h2>Meet Our Team</h2>
-            <div class="employee-gallery">
-                <figure>
-                    <img src="images/employee1.jpg" alt="John - Tour Guide" class="client-img" />
-                    <figcaption>Sarah - Safety Expert</figcaption>
-                </figure>
-                <figure>
-                    <img src="images/employee2.jpg" alt="Sarah - Booking Manager" class="client-img" />
-                    <figcaption>John - Tour Guide</figcaption>
-                </figure>
-                <figure>
-                    <img src="images/employee3.jpg" alt="Mike - Safety Expert" class="client-img" />
-                    <figcaption>Lindsay - Booking Manager</figcaption>
-                </figure>
-            </div>
-        </section>
+        <div class="section-wrapper">
+            <section class="section">
+                <h2>Meet Our Team</h2>
+                <div class="employee-gallery">
+                    <figure>
+                        <img src="images/employee1.jpg" alt="Sarah - Safety Expert" class="client-img" />
+                        <figcaption>Sarah - Safety Expert</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/employee2.jpg" alt="John - Tour Guide" class="client-img" />
+                        <figcaption>John - Tour Guide</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/employee3.jpg" alt="Lindsay - Booking Manager" class="client-img" />
+                        <figcaption>Lindsay - Booking Manager</figcaption>
+                    </figure>
+                </div>
+            </section>
+        </div>
     </main>
 
     <footer>
