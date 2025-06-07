@@ -207,3 +207,94 @@ footer .socialmedia {
     margin: 0 auto;
     padding: 0 1.5rem;
 }
+
+/* ===== Additional Contact Page Styles (Safe for Global CSS) ===== */
+.contact-page input,
+.contact-page select,
+.contact-page textarea {
+    width: 100%;
+    padding: 0.6rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-family: var(--body-font);
+}
+
+.contact-page label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 0.3rem;
+}
+
+.contact-page button[type="submit"] {
+    background-color: var(--accent1-color);
+    color: white;
+    padding: 0.7rem 1.2rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.contact-page button:hover {
+    background-color: var(--primary-color);
+}
+
+.contact-form .newsletter-label {
+    margin-top: 1rem;
+    display: block;
+    font-weight: 500;
+    color: var(--text-color);
+}
+
+/* Uniform Employee Gallery Styling */
+.employee-gallery {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.employee-gallery figure {
+    width: 200px;
+    text-align: center;
+}
+
+.employee-gallery img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.newsletter-container {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+    white-space: nowrap;
+}
+
+.newsletter-container label {
+    font-weight: bold;
+    color: var(--text-color);
+    margin: 0;
+}
+
+
+.map-container {
+    width: 100%;
+    max-width: 500px;
+    height: 300px;
+    margin: 2rem auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    /* Styled here instead of inline */
+    border-radius: 8px;
+}
