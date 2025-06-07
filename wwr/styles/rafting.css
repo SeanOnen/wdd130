@@ -209,7 +209,8 @@ footer .socialmedia {
 }
 
 /* Contact Page Styles */
-h1, h2 {
+h1,
+h2 {
     font-family: var(--heading-font);
     color: var(--primary-color);
     text-align: center;
@@ -306,6 +307,6 @@ h1, h2 {
 }
 
 .section-wrapper {
-    margin-bottom: 4rem; /* or any value that gives clear separation */
+    margin-bottom: 4rem;
+    /* or any value that gives clear separation */
 }
-
