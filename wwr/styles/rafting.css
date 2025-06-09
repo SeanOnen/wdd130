@@ -288,8 +288,6 @@ h2 {
     border-radius: 8px;
 }
 
-
-
 .map-container {
     width: 100%;
     max-width: 500px;
@@ -309,4 +307,141 @@ h2 {
 .section-wrapper {
     margin-bottom: 4rem;
     /* or any value that gives clear separation */
+}
+
+.homepage section {
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+}
+
+/* === HERO SECTION === */
+.homepage .hero {
+    position: relative;
+    width: 100%;
+    height: 60vh;
+    overflow: hidden;
+}
+
+.homepage .hero-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.homepage .hero-heading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    font-size: 3rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+    text-align: center;
+    padding: 1rem;
+}
+
+/* === CALL TO ACTION SECTION === */
+.cta {
+    text-align: center;
+    background-color: var(--light-bg);
+    padding: 2rem 1rem;
+}
+
+.cta h2 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.cta p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: #0077cc;
+    color: #fff;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+/* === NEWSLETTER SIGNUP SECTION === */
+.newsletter {
+    padding: 2rem 1rem;
+    background-color: var(--light-bg);
+    text-align: center;
+}
+
+.newsletter h2 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+.newsletter form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.newsletter input[type="text"],
+.newsletter input[type="email"] {
+    padding: 0.75rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+
+.newsletter button {
+    padding: 0.75rem 1.2rem;
+    font-size: 1rem;
+    background-color: #0077cc;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.newsletter button:hover {
+    background-color: #005fa3;
+}
+
+/* === GRID LAYOUT SECTION === */
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    padding: 2rem 1rem;
+    background-color: #f5f5f5;
+}
+
+.grid-item {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.grid-item:hover {
+    transform: translateY(-5px);
+}
+
+.grid-item img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.grid-item p {
+    padding: 1rem;
+    font-size: 1rem;
 }
